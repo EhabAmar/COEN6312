@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_bFUUMJyEEeaQrL3JOIm1WA" name="Move">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_8yCtgJyEEeaQrL3JOIm1WA">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PYEikJyHEeaQrL3JOIm1WA" name="Player">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YVESwJyHEeaQrL3JOIm1WA" name="name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hH0WQJyREeaC86Z31Vz0qw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hH8SEJyREeaC86Z31Vz0qw" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_puJMgJyJEeaQrL3JOIm1WA" name="getPosition"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_wjUa8JyREeaC86Z31Vz0qw" name="move"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0nZ7cJyREeaC86Z31Vz0qw" name="wins"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Z4HY4JySEeaC86Z31Vz0qw" name="Game">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dhXXgJySEeaC86Z31Vz0qw" name="numberOfPlayers">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_d-8EUJySEeaC86Z31Vz0qw" name="winner">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h1OZYJySEeaC86Z31Vz0qw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h1PngJySEeaC86Z31Vz0qw" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_m1BUMJySEeaC86Z31Vz0qw" name="createPlayers"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_pj_b4JySEeaC86Z31Vz0qw" name="currentPlayer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_p4XJYJySEeaC86Z31Vz0qw" name="notOver"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_q0RYAJySEeaC86Z31Vz0qw" name="createBoard"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_rURtwJySEeaC86Z31Vz0qw" name="play"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_rwgWwJySEeaC86Z31Vz0qw" name="firtsSquare"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sF27sJySEeaC86Z31Vz0qw" name="createPlayers"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_su3ccJySEeaC86Z31Vz0qw" name="findSquare"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_tOND0JySEeaC86Z31Vz0qw" name="findLastSquare"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_tvkEcJySEeaC86Z31Vz0qw" name="movePlayer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9hUF8JySEeaC86Z31Vz0qw" name="Die">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_O9j6YJyTEeaC86Z31Vz0qw" name="dieValue">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Mk-SYJyTEeaC86Z31Vz0qw" name="roll"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TjFUAJyTEeaC86Z31Vz0qw" memberEnd="_TjKMgJyTEeaC86Z31Vz0qw _TjKMgZyTEeaC86Z31Vz0qw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TjIXUJyTEeaC86Z31Vz0qw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TjI-YJyTEeaC86Z31Vz0qw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TjKMgZyTEeaC86Z31Vz0qw" name="game" type="_Z4HY4JySEeaC86Z31Vz0qw" association="_TjFUAJyTEeaC86Z31Vz0qw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TjKMgJyTEeaC86Z31Vz0qw" name="dice" type="_9hUF8JySEeaC86Z31Vz0qw" association="_TjFUAJyTEeaC86Z31Vz0qw"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GKkjIJyFEeaQrL3JOIm1WA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GKqCsJyFEeaQrL3JOIm1WA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/JAVA/1#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </profileApplication>
+</uml:Model>
