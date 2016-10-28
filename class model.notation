@@ -40,7 +40,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PYIM_5yHEeaQrL3JOIm1WA"/>
     </children>
     <element xmi:type="uml:Class" href="class%20model.uml#_PYEikJyHEeaQrL3JOIm1WA"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PYG-0ZyHEeaQrL3JOIm1WA" x="131" y="75"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PYG-0ZyHEeaQrL3JOIm1WA" x="121" y="51"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_Z4KcMJySEeaC86Z31Vz0qw" type="2008">
     <children xmi:type="notation:DecorationNode" xmi:id="_Z4LDQJySEeaC86Z31Vz0qw" type="5029"/>
