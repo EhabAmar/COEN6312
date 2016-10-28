@@ -623,7 +623,7 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_SdWV0ZylEeaeWqPmQyoZMA"/>
     <element xmi:type="uml:Association" href="class%20model.uml#_SdI6cJylEeaeWqPmQyoZMA"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SdWV0pylEeaeWqPmQyoZMA" points="[0, -100, 133, 26]$[0, -114, 133, 12]$[-155, -114, -22, 12]$[-155, -115, -22, 11]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SdWV0pylEeaeWqPmQyoZMA" points="[0, 0, 133, 29]$[0, -18, 133, 11]$[-155, -18, -22, 11]$[-155, -18, -22, 11]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SeF8sJylEeaeWqPmQyoZMA" id="(0.3116883116883117,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SeGjwJylEeaeWqPmQyoZMA" id="(0.6839080459770115,0.4380952380952381)"/>
   </edges>

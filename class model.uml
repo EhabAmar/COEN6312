@@ -99,14 +99,14 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_oyclAJykEeaeWqPmQyoZMA" name="square" type="_JW9rAJyjEeaeWqPmQyoZMA" association="_oyXFcJykEeaeWqPmQyoZMA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_oyb98JykEeaeWqPmQyoZMA" name="isquare" type="_Ik2cIJykEeaeWqPmQyoZMA" association="_oyXFcJykEeaeWqPmQyoZMA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_wJJFwJykEeaeWqPmQyoZMA" name="First Square">
+  <packagedElement xmi:type="uml:Class" xmi:id="_wJJFwJykEeaeWqPmQyoZMA" name="FirstSquare">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_4gNeYJykEeaeWqPmQyoZMA" name="enter">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_JYVSEJylEeaeWqPmQyoZMA" name="leave"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Hr4XUJylEeaeWqPmQyoZMA" name="isOccupied"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_xk6gMJykEeaeWqPmQyoZMA" name="Last Square">
+  <packagedElement xmi:type="uml:Class" xmi:id="_xk6gMJykEeaeWqPmQyoZMA" name="LastSquare">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_7lz9YJykEeaeWqPmQyoZMA" name="isLastSquare">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
@@ -130,10 +130,10 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_0DPuYJylEeaeWqPmQyoZMA" name="field"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_1NiXQJylEeaeWqPmQyoZMA" name="field"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_2Y4JAJylEeaeWqPmQyoZMA" name="Snake Down">
+  <packagedElement xmi:type="uml:Class" xmi:id="_2Y4JAJylEeaeWqPmQyoZMA" name="SnakeDown">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_5FYykJylEeaeWqPmQyoZMA" name="move"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_6WywEJylEeaeWqPmQyoZMA" name="Ladder Up">
+  <packagedElement xmi:type="uml:Class" xmi:id="_6WywEJylEeaeWqPmQyoZMA" name="LadderUp">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_-h1NIJylEeaeWqPmQyoZMA" name="field"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Bx-vQJymEeaeWqPmQyoZMA" name="move"/>
   </packagedElement>
