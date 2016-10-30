@@ -10,6 +10,14 @@
         <element xmi:type="uml:Property" href="class%20model.uml#_YVESwJyHEeaQrL3JOIm1WA"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_YVJyUZyHEeaQrL3JOIm1WA"/>
       </children>
+      <children xmi:type="notation:Shape" xmi:id="_3-BU8J7hEeasaNeSmUplgw" type="3012">
+        <element xmi:type="uml:Property" href="class%20model.uml#_39RHAJ7hEeasaNeSmUplgw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3-BU8Z7hEeasaNeSmUplgw"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_fI5ZAJ7iEeasaNeSmUplgw" type="3012">
+        <element xmi:type="uml:Property" href="class%20model.uml#_fIaQ0J7iEeasaNeSmUplgw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fI5ZAZ7iEeasaNeSmUplgw"/>
+      </children>
       <styles xmi:type="notation:TitleStyle" xmi:id="_PYIM8pyHEeaQrL3JOIm1WA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_PYIM85yHEeaQrL3JOIm1WA"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_PYIM9JyHEeaQrL3JOIm1WA"/>

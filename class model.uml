@@ -9,6 +9,12 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hH0WQJyREeaC86Z31Vz0qw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hH8SEJyREeaC86Z31Vz0qw" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_39RHAJ7hEeasaNeSmUplgw" name="playerLocation">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fIaQ0J7iEeasaNeSmUplgw" name="turn">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_puJMgJyJEeaQrL3JOIm1WA" name="getPosition"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_wjUa8JyREeaC86Z31Vz0qw" name="move"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_0nZ7cJyREeaC86Z31Vz0qw" name="wins"/>
@@ -16,6 +22,8 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_Z4HY4JySEeaC86Z31Vz0qw" name="Game">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_dhXXgJySEeaC86Z31Vz0qw" name="numberOfPlayers">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xR_FUJ7iEeasaNeSmUplgw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSATcJ7iEeasaNeSmUplgw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_d-8EUJySEeaC86Z31Vz0qw" name="winner">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -58,6 +66,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BB7SsJyjEeaeWqPmQyoZMA" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_318EQJyiEeaeWqPmQyoZMA" name="numOfLadders">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ecq7QJyjEeaeWqPmQyoZMA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EcriUJyjEeaeWqPmQyoZMA" value="*"/>
     </ownedAttribute>
