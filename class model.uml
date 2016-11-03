@@ -3,159 +3,418 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_8yCtgJyEEeaQrL3JOIm1WA">
     <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Class" xmi:id="_PYEikJyHEeaQrL3JOIm1WA" name="Player">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_YVESwJyHEeaQrL3JOIm1WA" name="name">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hH0WQJyREeaC86Z31Vz0qw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hH8SEJyREeaC86Z31Vz0qw" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_39RHAJ7hEeasaNeSmUplgw" name="playerLocation">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_fIaQ0J7iEeasaNeSmUplgw" name="turn">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-    </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_puJMgJyJEeaQrL3JOIm1WA" name="getPosition"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_wjUa8JyREeaC86Z31Vz0qw" name="move"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_0nZ7cJyREeaC86Z31Vz0qw" name="wins"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bjPW8KHBEeap1v8O--H_hw" name="SnakesnLadders">
+    <packagedElement xmi:type="uml:Class" xmi:id="_PYEikJyHEeaQrL3JOIm1WA" name="Player">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_YVESwJyHEeaQrL3JOIm1WA" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hH0WQJyREeaC86Z31Vz0qw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hH8SEJyREeaC86Z31Vz0qw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_39RHAJ7hEeasaNeSmUplgw" name="location">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fIaQ0J7iEeasaNeSmUplgw" name="numberOfPlayers">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_puJMgJyJEeaQrL3JOIm1WA" name="getCurrentPosition">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_1BkA4KHAEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_wjUa8JyREeaC86Z31Vz0qw" name="moveForward">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_810AUKHAEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_E-KAcKHBEeap1v8O--H_hw" name="moves">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_0nZ7cJyREeaC86Z31Vz0qw" name="wins">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_JnAa4KHBEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__Xa24KG_Eeap1v8O--H_hw" name="rollDice">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_MMmkIKHBEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_A2MiAKHAEeap1v8O--H_hw" name="setPosition"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Z4HY4JySEeaC86Z31Vz0qw" name="Game">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dhXXgJySEeaC86Z31Vz0qw" name="hasGameStarted">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xR_FUJ7iEeasaNeSmUplgw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSATcJ7iEeasaNeSmUplgw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_d-8EUJySEeaC86Z31Vz0qw" name="gameOver">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h1OZYJySEeaC86Z31Vz0qw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h1PngJySEeaC86Z31Vz0qw" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_m1BUMJySEeaC86Z31Vz0qw" name="beginPlay"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_pj_b4JySEeaC86Z31Vz0qw" name="endGameIfPlayerWon"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_p4XJYJySEeaC86Z31Vz0qw" name="getFirstPlayer"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_q0RYAJySEeaC86Z31Vz0qw" name="getOrderOfPlayers"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9hUF8JySEeaC86Z31Vz0qw" name="Dice">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_O9j6YJyTEeaC86Z31Vz0qw" name="value">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sLXEI6HfEeaEFfNRGS3eTg" name="game" type="_Z4HY4JySEeaC86Z31Vz0qw" association="_sLWdEKHfEeaEFfNRGS3eTg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xWtHoKHfEeaEFfNRGS3eTg" name="player" type="_PYEikJyHEeaQrL3JOIm1WA" association="_xWr5gKHfEeaEFfNRGS3eTg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Mk-SYJyTEeaC86Z31Vz0qw" name="getDiceValue">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ySaj8KHJEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_y8zkwKHJEeap1v8O--H_hw" name="generateDiceValue">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_2RRmMKHJEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1QqrIJyiEeaeWqPmQyoZMA" name="Board">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3DtWEJyiEeaeWqPmQyoZMA" name="squareCount">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CFMtkJyjEeaeWqPmQyoZMA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CFNUoJyjEeaeWqPmQyoZMA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3cV4gJyiEeaeWqPmQyoZMA" name="ladderCount">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BB4PYJyjEeaeWqPmQyoZMA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BB7SsJyjEeaeWqPmQyoZMA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_318EQJyiEeaeWqPmQyoZMA" name="snakeCount">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ecq7QJyjEeaeWqPmQyoZMA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EcriUJyjEeaeWqPmQyoZMA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DsDuU6HgEeaEFfNRGS3eTg" name="customizeboard" type="_2Y4JAJylEeaeWqPmQyoZMA" association="_DsDuUKHgEeaEFfNRGS3eTg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GkLK8qHgEeaEFfNRGS3eTg" name="square" type="_JW9rAJyjEeaeWqPmQyoZMA" aggregation="shared" association="_GkJ80KHgEeaEFfNRGS3eTg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4pxnQKHMEeap1v8O--H_hw" name="getLadderCount">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9YPhgKHMEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_E6xe0KHNEeap1v8O--H_hw" name="getSnakeCount">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_JQ2uQKHNEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_KS9EcKHNEeap1v8O--H_hw" name="getSquareCount">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_NR13cKHNEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_RVItwKHNEeap1v8O--H_hw" name="fingSquare">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_YgqgUKHNEeap1v8O--H_hw" name="position">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_aVeF0KHNEeap1v8O--H_hw" type="_JW9rAJyjEeaeWqPmQyoZMA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_azxLYKHNEeap1v8O--H_hw" name="fingSquare">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_dlqrQKHNEeap1v8O--H_hw" type="_JW9rAJyjEeaeWqPmQyoZMA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_d93I0KHNEeap1v8O--H_hw" name="lastSquare">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_gqDCQKHNEeap1v8O--H_hw" type="_JW9rAJyjEeaeWqPmQyoZMA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JW9rAJyjEeaeWqPmQyoZMA" name="Square">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_j1pJQJyjEeaeWqPmQyoZMA" name="position">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ugzkKHCEeap1v8O--H_hw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8uiBsKHCEeap1v8O--H_hw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ItfA0aHgEeaEFfNRGS3eTg" name="squarerole" type="_pF4fwKHFEeap1v8O--H_hw" association="_ItdLoKHgEeaEFfNRGS3eTg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xMOv4JyjEeaeWqPmQyoZMA" name="landPlayer">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_v_vlcKHDEeap1v8O--H_hw" name="p" type="_PYEikJyHEeaQrL3JOIm1WA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_zKuc4JyjEeaeWqPmQyoZMA" name="isLastSquare">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_LFd1kKHEEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_z5gOcJyjEeaeWqPmQyoZMA" name="getPlayer">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_z9JZsKHEEeap1v8O--H_hw" type="_PYEikJyHEeaQrL3JOIm1WA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_0rKU4JyjEeaeWqPmQyoZMA" name="leavePlayer">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_fjxFwKHEEeap1v8O--H_hw" name="p" type="_PYEikJyHEeaQrL3JOIm1WA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1KcR4JyjEeaeWqPmQyoZMA" name="isOccupied">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_PAjLEKHEEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1iXCoJyjEeaeWqPmQyoZMA" name="moveAndLandPlayer">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_svHswKHEEeap1v8O--H_hw" name="moves">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_uw_d4KHEEeap1v8O--H_hw" type="_JW9rAJyjEeaeWqPmQyoZMA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_17mCAJyjEeaeWqPmQyoZMA" name="landHereOrGoHome">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_YFq8gKHEEeap1v8O--H_hw" type="_JW9rAJyjEeaeWqPmQyoZMA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_2ltWAJyjEeaeWqPmQyoZMA" name="getPosition">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_PPo6gKHFEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_BYjNgJykEeaeWqPmQyoZMA" name="setPlayer">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_A8Ac0KHFEeap1v8O--H_hw" name="p" type="_PYEikJyHEeaQrL3JOIm1WA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_CkA7EJykEeaeWqPmQyoZMA" name="findFirstSquare">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Sk3J4KHFEeap1v8O--H_hw" type="_JW9rAJyjEeaeWqPmQyoZMA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_DRGqkJykEeaeWqPmQyoZMA" name="findRelativeSquare">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_W35sYKHFEeap1v8O--H_hw" name="shift">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZM3_sKHFEeap1v8O--H_hw" type="_JW9rAJyjEeaeWqPmQyoZMA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nl0GEKHDEeap1v8O--H_hw" name="findLastSquare">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_dIAYgKHFEeap1v8O--H_hw" type="_JW9rAJyjEeaeWqPmQyoZMA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_gF_MkKHFEeap1v8O--H_hw" name="setSquareRole">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_vGO4oKHFEeap1v8O--H_hw" name="sr" type="_pF4fwKHFEeap1v8O--H_hw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wJJFwJykEeaeWqPmQyoZMA" name="RegularSquare"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xk6gMJykEeaeWqPmQyoZMA" name="LastSquare">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_GRFqIKHQEeap1v8O--H_hw" name="isLastSquare">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_JXNtkKHQEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_90gaAKG8Eeap1v8O--H_hw" name="GameLaunch">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ivQcQKHCEeap1v8O--H_hw" name="main"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2Y4JAJylEeaeWqPmQyoZMA" name="CustomizeBoard">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_p3EWAKHOEeap1v8O--H_hw" name="customBoardSize">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sozd0KHOEeap1v8O--H_hw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_so1TAKHOEeap1v8O--H_hw" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_5FYykJylEeaeWqPmQyoZMA" name="configureBoard"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_vwpYgKHOEeap1v8O--H_hw" name="calculateBoardSIze"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xbz50KHOEeap1v8O--H_hw" name="setSnakeCount"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_-30zAKHOEeap1v8O--H_hw" name="setLadderCount"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6WywEJylEeaeWqPmQyoZMA" name="FirstSquare" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4JGogaHfEeaEFfNRGS3eTg" name="player" type="_PYEikJyHEeaQrL3JOIm1WA" aggregation="shared" association="_4JEzUKHfEeaEFfNRGS3eTg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rh0ncKHkEeaEFfNRGS3eTg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rh444KHkEeaEFfNRGS3eTg" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Bx-vQJymEeaeWqPmQyoZMA" name="getNumberOfPlayers">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_LtbzgKHPEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xj3NIKHPEeap1v8O--H_hw" name="landPlayer">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_0UoroKHPEeap1v8O--H_hw" name="player" type="_PYEikJyHEeaQrL3JOIm1WA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_0232AKHPEeap1v8O--H_hw" name="leavePlayer">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_7OITAKHPEeap1v8O--H_hw" name="player" type="_PYEikJyHEeaQrL3JOIm1WA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_-MVwkKHPEeap1v8O--H_hw" name="isOccupied">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_BF7z4KHQEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_B5A2oKHQEeap1v8O--H_hw" name="isFirstSquare">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ETWLEKHQEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lRFf0KHCEeap1v8O--H_hw" name="GameScore">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ozBVgKHCEeap1v8O--H_hw" name="nameOfPlayer">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t07wMKHCEeap1v8O--H_hw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t08XQKHCEeap1v8O--H_hw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yK_xgKHCEeap1v8O--H_hw" name="numberOfPlayerMoves">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kA3P4JylEeaeWqPmQyoZMA" name="GameGrid">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vwb1YJylEeaeWqPmQyoZMA" name="buttonName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tz2xIKHNEeap1v8O--H_hw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tz3YMKHNEeap1v8O--H_hw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0DPuYJylEeaeWqPmQyoZMA" name="playerName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xPz6oKHNEeap1v8O--H_hw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xP0hsKHNEeap1v8O--H_hw" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_zpo4wKHNEeap1v8O--H_hw" name="setPlayerName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1M2_AKHNEeap1v8O--H_hw" name="getButtonVale"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_26gMkKHNEeap1v8O--H_hw" name="GUI"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_BlqHsKHOEeap1v8O--H_hw" name="rollDiceButton"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_FBQr4KHOEeap1v8O--H_hw" name="scoreCardMenuItem"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_HnDCYKHOEeap1v8O--H_hw" name="exitMenuItem"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_KRDKgKHOEeap1v8O--H_hw" name="newGameMenuItem"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_M5uc8KHOEeap1v8O--H_hw" name="setNameInTextField"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pF4fwKHFEeap1v8O--H_hw" name="SquareRole">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Itfn4KHgEeaEFfNRGS3eTg" name="square" type="_JW9rAJyjEeaeWqPmQyoZMA" association="_ItdLoKHgEeaEFfNRGS3eTg"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Bi5rcKHKEeap1v8O--H_hw" name="landPlayer">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXOOEKHKEeap1v8O--H_hw" name="player" type="_PYEikJyHEeaQrL3JOIm1WA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ONvmYKHKEeap1v8O--H_hw" name="isFirstSquare">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_RG3voKHKEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_RrqewKHKEeap1v8O--H_hw" name="isLastSquare">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_UTsQ8KHKEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_VKQFgKHKEeap1v8O--H_hw" name="landHereOrGoHome">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yw1xsKHKEeap1v8O--H_hw" type="_JW9rAJyjEeaeWqPmQyoZMA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ZQh-YKHKEeap1v8O--H_hw" name="leavePlayer">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_dXE9AKHKEeap1v8O--H_hw" name="player" type="_PYEikJyHEeaQrL3JOIm1WA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_el_nMKHKEeap1v8O--H_hw" name="moveAndLand">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_iIuuIKHKEeap1v8O--H_hw" name="moves">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j5DcQKHKEeap1v8O--H_hw" type="_JW9rAJyjEeaeWqPmQyoZMA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_k28n4KHKEeap1v8O--H_hw" name="isOccupied">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_naYN8KHKEeap1v8O--H_hw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZqCRQKHPEeap1v8O--H_hw" name="SnakeSquare">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_g3D4oKHPEeap1v8O--H_hw" name="snakeHead">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_kLFOIKHPEeap1v8O--H_hw" name="snakeTail">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_NnjhYKHQEeap1v8O--H_hw" name="landHereOrGoHome">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_QzwXoKHQEeap1v8O--H_hw" type="_JW9rAJyjEeaeWqPmQyoZMA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aA-KkKHPEeap1v8O--H_hw" name="LadderSquare">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mkNosKHPEeap1v8O--H_hw" name="ladderStart">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_o-1RAKHPEeap1v8O--H_hw" name="ladderEnd">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_UDS1wKHQEeap1v8O--H_hw" name="landHereOrGoHome">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_WZNkQKHQEeap1v8O--H_hw" type="_JW9rAJyjEeaeWqPmQyoZMA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8oKaUKHKEeap1v8O--H_hw" name="GameMenu">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__O5MAKHKEeap1v8O--H_hw" name="displayWinner"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_BXrdcKHLEeap1v8O--H_hw" name="displayScore"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_CoV0EKHLEeap1v8O--H_hw" name="GUI"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_0LIuMKHLEeap1v8O--H_hw" name="exitButton"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1mlYgKHLEeap1v8O--H_hw" name="newGameButton"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3TfmQKHLEeap1v8O--H_hw" name="aboutButton"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_79geUKHLEeap1v8O--H_hw" name="returnaboutButton"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_MOR-IKHMEeap1v8O--H_hw" name="customizeBoardButton"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_OvcTUKHMEeap1v8O--H_hw" name="helpButton"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_QJDKkKHMEeap1v8O--H_hw" name="startPlay"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ZSe0QKHMEeap1v8O--H_hw" name="backMainMenuButton"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_oHU8EKHhEeaEFfNRGS3eTg" client="_6WywEJylEeaeWqPmQyoZMA" supplier="_pF4fwKHFEeap1v8O--H_hw"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_tPDD0KHhEeaEFfNRGS3eTg" client="_xk6gMJykEeaeWqPmQyoZMA" supplier="_pF4fwKHFEeap1v8O--H_hw"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_uK95gKHhEeaEFfNRGS3eTg" client="_aA-KkKHPEeap1v8O--H_hw" supplier="_pF4fwKHFEeap1v8O--H_hw"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_vPQoEKHhEeaEFfNRGS3eTg" client="_wJJFwJykEeaeWqPmQyoZMA" supplier="_pF4fwKHFEeap1v8O--H_hw"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_wHZxAKHhEeaEFfNRGS3eTg" name="R13" client="_ZqCRQKHPEeap1v8O--H_hw" supplier="_pF4fwKHFEeap1v8O--H_hw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_Z4HY4JySEeaC86Z31Vz0qw" name="Game">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_dhXXgJySEeaC86Z31Vz0qw" name="numberOfPlayers">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xR_FUJ7iEeasaNeSmUplgw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xSATcJ7iEeasaNeSmUplgw" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_d-8EUJySEeaC86Z31Vz0qw" name="winner">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h1OZYJySEeaC86Z31Vz0qw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h1PngJySEeaC86Z31Vz0qw" value="*"/>
-    </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_m1BUMJySEeaC86Z31Vz0qw" name="createPlayers"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_pj_b4JySEeaC86Z31Vz0qw" name="currentPlayer"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_p4XJYJySEeaC86Z31Vz0qw" name="notOver"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_q0RYAJySEeaC86Z31Vz0qw" name="createBoard"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_rURtwJySEeaC86Z31Vz0qw" name="play"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_rwgWwJySEeaC86Z31Vz0qw" name="firtsSquare"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_sF27sJySEeaC86Z31Vz0qw" name="createPlayers"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_su3ccJySEeaC86Z31Vz0qw" name="findSquare"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_tOND0JySEeaC86Z31Vz0qw" name="findLastSquare"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_tvkEcJySEeaC86Z31Vz0qw" name="movePlayer"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_9hUF8JySEeaC86Z31Vz0qw" name="Die">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_O9j6YJyTEeaC86Z31Vz0qw" name="dieValue">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-    </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_Mk-SYJyTEeaC86Z31Vz0qw" name="roll"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_TjFUAJyTEeaC86Z31Vz0qw" memberEnd="_TjKMgJyTEeaC86Z31Vz0qw _TjKMgZyTEeaC86Z31Vz0qw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TjIXUJyTEeaC86Z31Vz0qw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TjI-YJyTEeaC86Z31Vz0qw" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Py1IUKHfEeaEFfNRGS3eTg" name="R2" memberEnd="_Py6n4KHfEeaEFfNRGS3eTg _Py7O8KHfEeaEFfNRGS3eTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Py4ysKHfEeaEFfNRGS3eTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Py5ZwKHfEeaEFfNRGS3eTg" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_TjKMgZyTEeaC86Z31Vz0qw" name="game" type="_Z4HY4JySEeaC86Z31Vz0qw" association="_TjFUAJyTEeaC86Z31Vz0qw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_TjKMgJyTEeaC86Z31Vz0qw" name="dice" type="_9hUF8JySEeaC86Z31Vz0qw" association="_TjFUAJyTEeaC86Z31Vz0qw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Py7O8KHfEeaEFfNRGS3eTg" name="gamelaunch" type="_90gaAKG8Eeap1v8O--H_hw" association="_Py1IUKHfEeaEFfNRGS3eTg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Py6n4KHfEeaEFfNRGS3eTg" name="game" type="_Z4HY4JySEeaC86Z31Vz0qw" association="_Py1IUKHfEeaEFfNRGS3eTg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_1QqrIJyiEeaeWqPmQyoZMA" name="Board">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_3DtWEJyiEeaeWqPmQyoZMA" name="numOfSquares">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CFMtkJyjEeaeWqPmQyoZMA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CFNUoJyjEeaeWqPmQyoZMA" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_3cV4gJyiEeaeWqPmQyoZMA" name="numOfSnakes">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BB4PYJyjEeaeWqPmQyoZMA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BB7SsJyjEeaeWqPmQyoZMA" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_318EQJyiEeaeWqPmQyoZMA" name="numOfLadders">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ecq7QJyjEeaeWqPmQyoZMA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EcriUJyjEeaeWqPmQyoZMA" value="*"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_JW9rAJyjEeaeWqPmQyoZMA" name="Square">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_hadgQJyjEeaeWqPmQyoZMA" name="player"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_j1pJQJyjEeaeWqPmQyoZMA" name="position"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_kO5WwJyjEeaeWqPmQyoZMA" name="game"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_xMOv4JyjEeaeWqPmQyoZMA" name="isFirstSquare"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_zKuc4JyjEeaeWqPmQyoZMA" name="isLastSquare"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_z5gOcJyjEeaeWqPmQyoZMA" name="getPlayer"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_0U8NQJyjEeaeWqPmQyoZMA" name="enterPlayer"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_0rKU4JyjEeaeWqPmQyoZMA" name="leavePlayer"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_1KcR4JyjEeaeWqPmQyoZMA" name="isOccupied"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_1iXCoJyjEeaeWqPmQyoZMA" name="moveAndLandPlayer"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_17mCAJyjEeaeWqPmQyoZMA" name="landHere"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_2ltWAJyjEeaeWqPmQyoZMA" name="getPosition"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_BYjNgJykEeaeWqPmQyoZMA" name="getGame"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_CkA7EJykEeaeWqPmQyoZMA" name="findFirstSquare"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_DRGqkJykEeaeWqPmQyoZMA" name="findRelativeSquare"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_Ik2cIJykEeaeWqPmQyoZMA" name="ISquare">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_LumbUJykEeaeWqPmQyoZMA" name="player"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_NqSr8JykEeaeWqPmQyoZMA" name="position"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_OHgMYJykEeaeWqPmQyoZMA" name="game"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_SBOP8JykEeaeWqPmQyoZMA" name="isFirstSquare"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_TGB74JykEeaeWqPmQyoZMA" name="isLastSquare"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_Tds1AJykEeaeWqPmQyoZMA" name="getPlayer"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_UYj6wJykEeaeWqPmQyoZMA" name="enterPlayer"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_VHp1YJykEeaeWqPmQyoZMA" name="leavePlayer"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_ViYpkJykEeaeWqPmQyoZMA" name="isOccupied"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_V8KbgJykEeaeWqPmQyoZMA" name="moveAndLandPlayer"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_WUeN0JykEeaeWqPmQyoZMA" name="landHereOrGoHome"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_oyXFcJykEeaeWqPmQyoZMA" memberEnd="_oyb98JykEeaeWqPmQyoZMA _oyclAJykEeaeWqPmQyoZMA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oyaIwJykEeaeWqPmQyoZMA" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyaIwZykEeaeWqPmQyoZMA" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Xed-UKHfEeaEFfNRGS3eTg" name="R8" memberEnd="_XeelYqHfEeaEFfNRGS3eTg _XefMcKHfEeaEFfNRGS3eTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XeelYKHfEeaEFfNRGS3eTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XeelYaHfEeaEFfNRGS3eTg" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_oyclAJykEeaeWqPmQyoZMA" name="square" type="_JW9rAJyjEeaeWqPmQyoZMA" association="_oyXFcJykEeaeWqPmQyoZMA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_oyb98JykEeaeWqPmQyoZMA" name="isquare" type="_Ik2cIJykEeaeWqPmQyoZMA" association="_oyXFcJykEeaeWqPmQyoZMA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XefMcKHfEeaEFfNRGS3eTg" name="player" type="_PYEikJyHEeaQrL3JOIm1WA" association="_Xed-UKHfEeaEFfNRGS3eTg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XeelYqHfEeaEFfNRGS3eTg" name="gamemenu" type="_8oKaUKHKEeap1v8O--H_hw" association="_Xed-UKHfEeaEFfNRGS3eTg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_wJJFwJykEeaeWqPmQyoZMA" name="FirstSquare">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_4gNeYJykEeaeWqPmQyoZMA" name="enter">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_JYVSEJylEeaeWqPmQyoZMA" name="leave"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_Hr4XUJylEeaeWqPmQyoZMA" name="isOccupied"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_xk6gMJykEeaeWqPmQyoZMA" name="LastSquare">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_7lz9YJykEeaeWqPmQyoZMA" name="isLastSquare">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_SdI6c5ylEeaeWqPmQyoZMA" type="_RghhMJylEeaeWqPmQyoZMA" association="_SdI6cJylEeaeWqPmQyoZMA"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_RghhMJylEeaeWqPmQyoZMA" memberEnd="_RgiIQpylEeaeWqPmQyoZMA _RgivUJylEeaeWqPmQyoZMA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RgiIQJylEeaeWqPmQyoZMA" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RgiIQZylEeaeWqPmQyoZMA" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_avzzQKHfEeaEFfNRGS3eTg" name="R5" memberEnd="_av1ocqHfEeaEFfNRGS3eTg _av3doKHfEeaEFfNRGS3eTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_av1ocKHfEeaEFfNRGS3eTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_av1ocaHfEeaEFfNRGS3eTg" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_RgivUJylEeaeWqPmQyoZMA" name="first square" type="_wJJFwJykEeaeWqPmQyoZMA" association="_RghhMJylEeaeWqPmQyoZMA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_RgiIQpylEeaeWqPmQyoZMA" name="square" type="_JW9rAJyjEeaeWqPmQyoZMA" association="_RghhMJylEeaeWqPmQyoZMA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_av3doKHfEeaEFfNRGS3eTg" name="game" type="_Z4HY4JySEeaC86Z31Vz0qw" association="_avzzQKHfEeaEFfNRGS3eTg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_av1ocqHfEeaEFfNRGS3eTg" name="gamemenu" type="_8oKaUKHKEeap1v8O--H_hw" association="_avzzQKHfEeaEFfNRGS3eTg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_SdI6cJylEeaeWqPmQyoZMA" memberEnd="_SdI6c5ylEeaeWqPmQyoZMA _SdJhgJylEeaeWqPmQyoZMA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SdI6cZylEeaeWqPmQyoZMA" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SdI6cpylEeaeWqPmQyoZMA" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dZB4QKHfEeaEFfNRGS3eTg" name="R3" memberEnd="_dZDGYKHfEeaEFfNRGS3eTg _dZDtcKHfEeaEFfNRGS3eTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dZCfUKHfEeaEFfNRGS3eTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dZCfUaHfEeaEFfNRGS3eTg" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_SdJhgJylEeaeWqPmQyoZMA" name="last square" type="_xk6gMJykEeaeWqPmQyoZMA" association="_SdI6cJylEeaeWqPmQyoZMA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dZDtcKHfEeaEFfNRGS3eTg" name="gamegrid" type="_kA3P4JylEeaeWqPmQyoZMA" association="_dZB4QKHfEeaEFfNRGS3eTg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dZDGYKHfEeaEFfNRGS3eTg" name="game" type="_Z4HY4JySEeaC86Z31Vz0qw" association="_dZB4QKHfEeaEFfNRGS3eTg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_kA3P4JylEeaeWqPmQyoZMA" name="Move">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_vwb1YJylEeaeWqPmQyoZMA" name="field"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_0DPuYJylEeaeWqPmQyoZMA" name="field"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_1NiXQJylEeaeWqPmQyoZMA" name="field"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_2Y4JAJylEeaeWqPmQyoZMA" name="SnakeDown">
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_5FYykJylEeaeWqPmQyoZMA" name="move"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_6WywEJylEeaeWqPmQyoZMA" name="LadderUp">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_-h1NIJylEeaeWqPmQyoZMA" name="field"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_Bx-vQJymEeaeWqPmQyoZMA" name="move"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_ISWsAJymEeaeWqPmQyoZMA" memberEnd="_ISXTEpymEeaeWqPmQyoZMA _ISXTE5ymEeaeWqPmQyoZMA _Moe-wJymEeaeWqPmQyoZMA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ISXTEJymEeaeWqPmQyoZMA" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ISXTEZymEeaeWqPmQyoZMA" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gFA9YKHfEeaEFfNRGS3eTg" memberEnd="_gFBkcqHfEeaEFfNRGS3eTg _gFCLgKHfEeaEFfNRGS3eTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gFBkcKHfEeaEFfNRGS3eTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gFBkcaHfEeaEFfNRGS3eTg" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_ISXTEpymEeaeWqPmQyoZMA" name="move" type="_kA3P4JylEeaeWqPmQyoZMA" association="_ISWsAJymEeaeWqPmQyoZMA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_ISXTE5ymEeaeWqPmQyoZMA" name="snake down" type="_2Y4JAJylEeaeWqPmQyoZMA" association="_ISWsAJymEeaeWqPmQyoZMA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_Moe-wJymEeaeWqPmQyoZMA" name="Ladder Up" type="_6WywEJylEeaeWqPmQyoZMA" association="_ISWsAJymEeaeWqPmQyoZMA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MohbAJymEeaeWqPmQyoZMA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MoiCEJymEeaeWqPmQyoZMA" value="1"/>
-    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gFCLgKHfEeaEFfNRGS3eTg" name="gamegrid" type="_kA3P4JylEeaeWqPmQyoZMA" association="_gFA9YKHfEeaEFfNRGS3eTg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gFBkcqHfEeaEFfNRGS3eTg" name="board" type="_1QqrIJyiEeaeWqPmQyoZMA" association="_gFA9YKHfEeaEFfNRGS3eTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_j2_aMKHfEeaEFfNRGS3eTg" name="R9" memberEnd="_j3ABQqHfEeaEFfNRGS3eTg _j3AoUKHfEeaEFfNRGS3eTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_j3ABQKHfEeaEFfNRGS3eTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j3ABQaHfEeaEFfNRGS3eTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_j3AoUKHfEeaEFfNRGS3eTg" name="gamescore" type="_lRFf0KHCEeap1v8O--H_hw" association="_j2_aMKHfEeaEFfNRGS3eTg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_j3ABQqHfEeaEFfNRGS3eTg" name="player" type="_PYEikJyHEeaQrL3JOIm1WA" association="_j2_aMKHfEeaEFfNRGS3eTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pdgWwKHfEeaEFfNRGS3eTg" name="R4" memberEnd="_pdg90qHfEeaEFfNRGS3eTg _pdhk4KHfEeaEFfNRGS3eTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pdg90KHfEeaEFfNRGS3eTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pdg90aHfEeaEFfNRGS3eTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pdhk4KHfEeaEFfNRGS3eTg" name="game" type="_Z4HY4JySEeaC86Z31Vz0qw" association="_pdgWwKHfEeaEFfNRGS3eTg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pdg90qHfEeaEFfNRGS3eTg" name="player" type="_PYEikJyHEeaQrL3JOIm1WA" association="_pdgWwKHfEeaEFfNRGS3eTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sLWdEKHfEeaEFfNRGS3eTg" name="R1" memberEnd="_sLXEIqHfEeaEFfNRGS3eTg _sLXEI6HfEeaEFfNRGS3eTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sLXEIKHfEeaEFfNRGS3eTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sLXEIaHfEeaEFfNRGS3eTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_sLXEIqHfEeaEFfNRGS3eTg" name="dice" type="_9hUF8JySEeaC86Z31Vz0qw" association="_sLWdEKHfEeaEFfNRGS3eTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xWr5gKHfEeaEFfNRGS3eTg" name="R6" memberEnd="_xWtHoKHfEeaEFfNRGS3eTg _xWtHoaHfEeaEFfNRGS3eTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xWsgkKHfEeaEFfNRGS3eTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xWsgkaHfEeaEFfNRGS3eTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xWtHoaHfEeaEFfNRGS3eTg" name="dice" type="_9hUF8JySEeaC86Z31Vz0qw" association="_xWr5gKHfEeaEFfNRGS3eTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4JEzUKHfEeaEFfNRGS3eTg" name="R7" memberEnd="_4JGogKHfEeaEFfNRGS3eTg _4JGogaHfEeaEFfNRGS3eTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4JGBcKHfEeaEFfNRGS3eTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4JGBcaHfEeaEFfNRGS3eTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4JGogKHfEeaEFfNRGS3eTg" name="firstsquare" type="_6WywEJylEeaeWqPmQyoZMA" association="_4JEzUKHfEeaEFfNRGS3eTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DsDuUKHgEeaEFfNRGS3eTg" name="R10" memberEnd="_DsDuU6HgEeaEFfNRGS3eTg _DsEVYKHgEeaEFfNRGS3eTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DsDuUaHgEeaEFfNRGS3eTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DsDuUqHgEeaEFfNRGS3eTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DsEVYKHgEeaEFfNRGS3eTg" name="board" type="_1QqrIJyiEeaeWqPmQyoZMA" association="_DsDuUKHgEeaEFfNRGS3eTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GkJ80KHgEeaEFfNRGS3eTg" name="R11" memberEnd="_GkLK8qHgEeaEFfNRGS3eTg _GkLyAKHgEeaEFfNRGS3eTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GkLK8KHgEeaEFfNRGS3eTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GkLK8aHgEeaEFfNRGS3eTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GkLyAKHgEeaEFfNRGS3eTg" name="board" type="_1QqrIJyiEeaeWqPmQyoZMA" association="_GkJ80KHgEeaEFfNRGS3eTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ItdLoKHgEeaEFfNRGS3eTg" name="R12" memberEnd="_ItfA0aHgEeaEFfNRGS3eTg _Itfn4KHgEeaEFfNRGS3eTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IteZwKHgEeaEFfNRGS3eTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ItfA0KHgEeaEFfNRGS3eTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GKkjIJyFEeaQrL3JOIm1WA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GKqCsJyFEeaQrL3JOIm1WA" source="http://www.eclipse.org/uml2/2.0.0/UML">
